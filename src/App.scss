@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+$bg-primary: #f9fcff;
+$bg-secondary: #edeffd;
+$color-confirmed: #fb9d02;
+$color-deaths: #fb4443;
+$color-recovered: #65dd9b;
+$color-white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: $bg-primary;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+  background-color: $bg-primary;
+  display: flex;
+  padding-bottom: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.MuiCard-root {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0px !important;
+}
+.app__header {
+  margin-bottom: 2rem;
+
+  .app__dropdown {
+    border-radius: 0px;
+    background-color: $color-white;
+    border: none !important;
+    background-color: #6337ff;
+    color: white !important;
+  }
+
+  .app__logo {
+    color: #6337ff;
+    font-weight: bold;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiSvgIcon-root {
+  fill: white;
+  color: #ffffff !important;
+  .MuiSelect-icon {
+    color: white !important;
+  }
+}
+
+.MuiSelect-root {
+  color: white !important;
+}
+
+.app__left {
+  // background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoCard__confirmed {
+  .infoCard__total {
+    color: $color-confirmed;
   }
-  to {
-    transform: rotate(360deg);
+
+  &.active > div {
+    transition: 0.5s;
+    border-top: 5px solid $color-confirmed;
+  }
+}
+
+.infoCard__recovered {
+  .infoCard__total {
+    color: $color-recovered;
+  }
+  &.active > div {
+    transition: 0.5s;
+    border-top: 5px solid $color-recovered;
+  }
+}
+
+.infoCard__deaths {
+  .infoCard__total {
+    color: $color-deaths;
+  }
+
+  &.active > div {
+    transition: 0.5s;
+    border-top: 5px solid $color-deaths;
+  }
+}
+
+.infoCard {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .infoCard__title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #261d56;
+  }
+  .infoCard__total {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .infoCard__cases {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6337ff;
+  }
+}
+.app__right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app__table {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  text-align: left;
+  margin: 1rem 0;
+  padding-right: 20px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f0f3f7;
+    border-radius: 10px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #dad2f3;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #6337ff;
+  }
+
+  table {
+    width: 100%;
+    font-size: 13px;
+
+    tr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 8px;
+    }
+    tr:nth-of-type(odd) {
+      background-color: $bg-primary;
+    }
+
+    .app__table-country {
+      display: flex;
+      align-items: center;
+    }
+    .app__table-country-flag {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .app__table-cases-number {
+      font-weight: bold;
+    }
+  }
+
+  .app__lineChart {
+    width: 100%;
   }
 }
