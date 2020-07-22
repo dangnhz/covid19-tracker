@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dangnhz/covid19-tracker/static/css/main.dff9fbdc.chunk.css",
+    "main.js": "/dangnhz/covid19-tracker/static/js/main.16f47127.chunk.js",
+    "main.js.map": "/dangnhz/covid19-tracker/static/js/main.16f47127.chunk.js.map",
+    "runtime-main.js": "/dangnhz/covid19-tracker/static/js/runtime-main.776a8f50.js",
+    "runtime-main.js.map": "/dangnhz/covid19-tracker/static/js/runtime-main.776a8f50.js.map",
+    "static/css/2.7c35e809.chunk.css": "/dangnhz/covid19-tracker/static/css/2.7c35e809.chunk.css",
+    "static/js/2.44176749.chunk.js": "/dangnhz/covid19-tracker/static/js/2.44176749.chunk.js",
+    "static/js/2.44176749.chunk.js.map": "/dangnhz/covid19-tracker/static/js/2.44176749.chunk.js.map",
+    "index.html": "/dangnhz/covid19-tracker/index.html",
+    "precache-manifest.fff317808f8a1336ebf96554e744899a.js": "/dangnhz/covid19-tracker/precache-manifest.fff317808f8a1336ebf96554e744899a.js",
+    "service-worker.js": "/dangnhz/covid19-tracker/service-worker.js",
+    "static/css/2.7c35e809.chunk.css.map": "/dangnhz/covid19-tracker/static/css/2.7c35e809.chunk.css.map",
+    "static/css/main.dff9fbdc.chunk.css.map": "/dangnhz/covid19-tracker/static/css/main.dff9fbdc.chunk.css.map",
+    "static/js/2.44176749.chunk.js.LICENSE.txt": "/dangnhz/covid19-tracker/static/js/2.44176749.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.776a8f50.js",
+    "static/css/2.7c35e809.chunk.css",
+    "static/js/2.44176749.chunk.js",
+    "static/css/main.dff9fbdc.chunk.css",
+    "static/js/main.16f47127.chunk.js"
+  ]
+}
